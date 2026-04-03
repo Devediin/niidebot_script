@@ -1,0 +1,21 @@
+# Aplicar perfil BOT MAIN em:
+# - [cspacer]Help channel
+# - [cspacer]Enemys
+# - [cspacer]Friends
+# - [cspacer]Neutrals
+
+# Aplicar perfil BOT PAGE em:
+# - [cspacer]Neutrals Page 1..10
+
+# Aplicar perfil VOICE em:
+# - Channel 01..19
+# - Private 2v2 01..02
+# - Private 4p 01..02
+# - Private 5p 01..02
+
+# Aplicar perfil AFK em:
+# - [cspacer] AFK
+
+Observação:
+os CIDs novos precisarão ser descobertos após a criação dos canais.
+Por isso a aplicação real deve ser feita por script dinâmico, não manualmente neste estágio.
