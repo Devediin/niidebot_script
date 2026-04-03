@@ -23,10 +23,12 @@ run_if_exists() {
 }
 
 run_if_exists "provision/09_create_app_user.sh"
+run_if_exists "provision/13_backup_structure.sh"
 run_if_exists "provision/01_system_base.sh"
 run_if_exists "provision/02_mongodb.sh"
 run_if_exists "provision/11_mongo_restore.sh"
 run_if_exists "provision/03_node_yarn.sh"
+run_if_exists "provision/12_bot_access_check.sh"
 run_if_exists "provision/04_teamspeak_install.sh"
 run_if_exists "provision/05_bot_install.sh"
 run_if_exists "provision/06_systemd_services.sh"
