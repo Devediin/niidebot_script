@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# shellcheck disable=SC1091
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lib.sh"
+
 export DEBIAN_FRONTEND=noninteractive
 
-echo "=================================================="
-echo " Etapa 01 - Sistema base"
-echo "=================================================="
+print_header "Etapa 01 - Sistema base"
+
+require_root_or_sudo
 
 sudo apt update
 sudo apt upgrade -y
@@ -38,6 +41,4 @@ sudo apt install -y \
   cron \
   ufw
 
-echo "=================================================="
-echo " Sistema base instalado com sucesso"
-echo "=================================================="
+print_header "Sistema base instalado com sucesso"
