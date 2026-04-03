@@ -1,0 +1,5 @@
+permid=86 permvalue=100 permnegated=0 permskip=0
+permid=133 permvalue=100 permnegated=0 permskip=0
+permid=140 permvalue=99 permnegated=0 permskip=0
+permid=142 permvalue=2 permnegated=0 permskip=0
+permid=144 permvalue=2 permnegated=0 permskip=0
