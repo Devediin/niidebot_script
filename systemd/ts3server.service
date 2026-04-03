@@ -1,0 +1,17 @@
+[Unit]
+Description=TeamSpeak 3 Server
+After=network.target
+
+[Service]
+Type=forking
+User=uai_coins
+WorkingDirectory=/home/uai_coins/ts3/teamspeak3-server_linux_amd64
+ExecStart=/home/uai_coins/ts3/teamspeak3-server_linux_amd64/ts3server_startscript.sh start
+ExecStop=/home/uai_coins/ts3/teamspeak3-server_linux_amd64/ts3server_startscript.sh stop
+ExecReload=/home/uai_coins/ts3/teamspeak3-server_linux_amd64/ts3server_startscript.sh restart
+PIDFile=/home/uai_coins/ts3/teamspeak3-server_linux_amd64/ts3server.pid
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
