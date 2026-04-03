@@ -1,41 +1,38 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# shellcheck disable=SC1091
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lib.sh"
+
 export DEBIAN_FRONTEND=noninteractive
 
-BOT_USER="uai_coins"
-BOT_DIR="/home/${BOT_USER}/tibia-ts3-teamspeakbot"
-BOT_REPO="git@github.com:Devediin/tsbot.git"
+ROOT_DIR="$(repo_root)"
 
-echo "=================================================="
-echo " Etapa 05 - Instalação do bot"
-echo "=================================================="
+print_header "Etapa 05 - Instalação do bot"
 
-if ! id -u "$BOT_USER" >/dev/null 2>&1; then
-  echo "Usuário $BOT_USER não existe. Crie o usuário antes de continuar."
-  exit 1
-fi
+require_root_or_sudo
+require_user_exists "$APP_USER"
 
 if [ ! -d "$BOT_DIR/.git" ]; then
-  sudo -u "$BOT_USER" git clone "$BOT_REPO" "$BOT_DIR"
+  sudo -u "$APP_USER" git clone "$BOT_REPO" "$BOT_DIR"
 else
   echo "Repositório já existe em $BOT_DIR. Atualizando..."
-  sudo -u "$BOT_USER" bash -c "cd '$BOT_DIR' && git pull"
+  sudo -u "$APP_USER" bash -c "cd '$BOT_DIR' && git pull"
 fi
 
-sudo chown -R "$BOT_USER:$BOT_USER" "$BOT_DIR"
+sudo chown -R "$APP_USER:$APP_USER" "$BOT_DIR"
 
 if [ -f "$BOT_DIR/package.json" ]; then
-  sudo -u "$BOT_USER" bash -c "cd '$BOT_DIR' && yarn install"
+  sudo -u "$APP_USER" bash -c "cd '$BOT_DIR' && yarn install"
 else
   echo "package.json não encontrado em $BOT_DIR"
   exit 1
 fi
 
 if [ ! -f "$BOT_DIR/.env" ]; then
-  if [ -f "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/env/.env.example" ]; then
-    sudo cp "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)/env/.env.example" "$BOT_DIR/.env"
-    sudo chown "$BOT_USER:$BOT_USER" "$BOT_DIR/.env"
+  if [ -f "$ROOT_DIR/env/.env.example" ]; then
+    sudo cp "$ROOT_DIR/env/.env.example" "$BOT_DIR/.env"
+    sudo chown "$APP_USER:$APP_USER" "$BOT_DIR/.env"
     echo "Arquivo .env criado a partir de env/.env.example"
     echo "IMPORTANTE: edite o .env antes de subir o serviço em produção."
   else
@@ -46,6 +43,4 @@ else
   echo ".env já existe em $BOT_DIR. Mantendo arquivo atual."
 fi
 
-echo "=================================================="
-echo " Bot instalado/configurado"
-echo "=================================================="
+print_header "Bot instalado/configurado"
