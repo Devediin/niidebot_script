@@ -1,0 +1,34 @@
+# Copie este arquivo para:
+# config/provision.conf
+#
+# E ajuste os valores conforme a VPS
+
+# Usuário principal da aplicação na VPS
+APP_USER=ubuntu
+
+# Diretório home do usuário
+APP_HOME=/home/ubuntu
+
+# Repositório do bot
+BOT_REPO=git@github.com:Devediin/tsbot.git
+
+# Diretório onde o bot ficará
+BOT_DIR=/home/ubuntu/tibia-ts3-teamspeakbot
+
+# Diretório base do TS3
+TS3_BASE_DIR=/home/ubuntu/ts3
+
+# Diretório final da instalação do TS3
+TS3_INSTALL_DIR=/home/ubuntu/ts3/teamspeak3-server_linux_amd64
+
+# Versão do TeamSpeak 3 Server
+TS3_VERSION=3.13.7
+
+# Nome do banco Mongo usado pelo bot
+MONGO_DB_NAME=bot
+
+# Nome do serviço systemd do TS3
+TS3_SERVICE_NAME=ts3server.service
+
+# Nome do serviço systemd do bot
+BOT_SERVICE_NAME=tibia-ts3-bot.service
