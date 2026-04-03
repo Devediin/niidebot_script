@@ -1,0 +1,9 @@
+Template base provisório para grupos de level.
+
+Estratégia:
+- usar base equivalente às permissões simples de grupos categóricos
+- manter estrutura expansível
+- revisar depois quando os grupos de level completos forem exportados
+
+Observação:
+neste estágio, grupos de level ainda não tiveram todas as permissões detalhadas individualmente.
