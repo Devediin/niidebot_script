@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# shellcheck disable=SC1091
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lib.sh"
 
-echo "=================================================="
-echo " Etapa 06 - Serviços systemd"
-echo "=================================================="
+ROOT_DIR="$(repo_root)"
+
+print_header "Etapa 06 - Serviços systemd"
+
+require_root_or_sudo
 
 if [ -f "$ROOT_DIR/systemd/ts3server.service" ]; then
   sudo cp "$ROOT_DIR/systemd/ts3server.service" /etc/systemd/system/ts3server.service
@@ -41,6 +44,4 @@ echo
 echo "Status Bot:"
 sudo systemctl --no-pager --full status tibia-ts3-bot.service || true
 
-echo "=================================================="
-echo " Serviços systemd configurados"
-echo "=================================================="
+print_header "Serviços systemd configurados"
