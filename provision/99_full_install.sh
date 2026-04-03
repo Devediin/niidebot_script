@@ -22,6 +22,7 @@ run_if_exists() {
   fi
 }
 
+run_if_exists "provision/09_create_app_user.sh"
 run_if_exists "provision/01_system_base.sh"
 run_if_exists "provision/02_mongodb.sh"
 run_if_exists "provision/03_node_yarn.sh"
@@ -29,6 +30,9 @@ run_if_exists "provision/04_teamspeak_install.sh"
 run_if_exists "provision/05_bot_install.sh"
 run_if_exists "provision/06_systemd_services.sh"
 run_if_exists "provision/07_validate_install.sh"
+run_if_exists "provision/08_show_next_steps.sh"
+run_if_exists "provision/10_firewall.sh"
+run_if_exists "provision/11_mongo_restore.sh"
 
 echo "=================================================="
 echo " Provisionamento finalizado"
