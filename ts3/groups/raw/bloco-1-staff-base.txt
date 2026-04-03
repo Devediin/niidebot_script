@@ -1,0 +1,25 @@
+[SGID 60] Invisível
+coletado
+
+[SGID 6] Leader
+coletado
+
+[SGID 57] Server Admin
+coletado
+
+[SGID 61] Movedor
+coletado
+
+[SGID 62] Registrada
+coletado
+
+[SGID 7] Registrado
+coletado
+
+[SGID 56] Sem Descricao
+coletado
+
+[SGID 8] Spy
+não exportado
+erro retornado:
+error id=1540 msg=convert\serror
