@@ -1,12 +1,10 @@
-Usar como base inicial a mesma estrutura do grupo Leader exportado do servidor atual.
+Leader corresponde ao grupo administrativo padrão/original do TeamSpeak 3.
+
+Regra do template:
+- não tratar como grupo custom comum
+- considerar equivalente ao grupo nativo obtido por privilege key / admin inicial
+- se necessário, apenas renomear visualmente para "Leader"
 
 Observação:
-o grupo Leader possui grande volume de permissões.
-Neste estágio do template, ele deve ser tratado como grupo avançado.
-
-Fonte de verdade atual:
-- bloco bruto exportado do sgid=6
-- ainda não convertido integralmente para formato enxuto de template
-
-Status:
-- pendente de conversão final
+as permissões do Leader não precisam ser recriadas manualmente no template custom,
+pois derivam do grupo administrativo padrão do TS3.
