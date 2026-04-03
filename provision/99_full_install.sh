@@ -28,6 +28,7 @@ run_if_exists "provision/03_node_yarn.sh"
 run_if_exists "provision/04_teamspeak_install.sh"
 run_if_exists "provision/05_bot_install.sh"
 run_if_exists "provision/06_systemd_services.sh"
+run_if_exists "provision/07_validate_install.sh"
 
 echo "=================================================="
 echo " Provisionamento finalizado"
