@@ -20,6 +20,5 @@ coletado
 coletado
 
 [SGID 8] Spy
-não exportado
-erro retornado:
-error id=1540 msg=convert\serror
+grupo padrão/nativo do TeamSpeak 3
+não será recriado como grupo custom no template
