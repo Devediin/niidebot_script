@@ -1,0 +1,10 @@
+channelcreate channel_name=[cspacer]Neutrals\sPage\s1 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s2 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s3 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s4 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s5 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s6 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s7 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s8 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s9 channel_flag_permanent=1
+channelcreate channel_name=[cspacer]Neutrals\sPage\s10 channel_flag_permanent=1
