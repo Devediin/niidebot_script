@@ -1,0 +1,17 @@
+[Unit]
+Description=Tibia TS3 Bot
+After=network.target mongod.service ts3server.service
+Wants=mongod.service
+Requires=ts3server.service
+
+[Service]
+Type=simple
+User=uai_coins
+WorkingDirectory=/home/uai_coins/tibia-ts3-teamspeakbot
+ExecStart=/usr/bin/yarn start
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
