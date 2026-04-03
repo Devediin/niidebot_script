@@ -1,0 +1,15 @@
+servergroupadd name=Invisível type=1
+servergroupadd name=Leader type=1
+servergroupadd name=Server\sAdmin type=1
+servergroupadd name=Movedor type=1
+servergroupadd name=Registrada type=1
+servergroupadd name=Registrado type=1
+servergroupadd name=Sem\sDescricao type=1
+servergroupadd name=Bot\sAdmin type=1
+servergroupadd name=Bot\sModerator type=1
+servergroupadd name=EK type=1
+servergroupadd name=ED type=1
+servergroupadd name=RP type=1
+servergroupadd name=MS type=1
+servergroupadd name=EM type=1
+servergroupadd name=--\sLEVEL\s-- type=1
