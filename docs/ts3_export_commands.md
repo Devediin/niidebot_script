@@ -1,31 +1,28 @@
 # TS3 Export Commands
 
-Use a VPS atual apenas para exportar informações do TeamSpeak 3.
+Esses comandos serão usados na VPS atual para exportar a estrutura do TS3.
 
-## Exportar grupos - bloco 1
+## Bloco 1
+- SGID 60
+- SGID 6
+- SGID 57
+- SGID 61
+- SGID 62
+- SGID 7
+- SGID 56
+- SGID 8
 
-```bash
-bash ts3/scripts/export_groups_block_1.sh
-Exportar grupos - bloco 2
-Bash
+## Bloco 2
+- SGID 16
+- SGID 15
 
-bash ts3/scripts/export_groups_block_2.sh
-Exportar grupos - bloco 3
-Bash
+## Bloco 3
+- SGID 17
+- SGID 19
+- SGID 18
+- SGID 20
+- SGID 21
 
-bash ts3/scripts/export_groups_block_3.sh
-Exportar grupos - bloco 4
-Bash
-
-bash ts3/scripts/export_groups_block_4.sh
-Exportar canais
-Bash
-
-bash ts3/scripts/export_channels.sh
-Observação
-Os arquivos gerados por padrão vão para o diretório HOME do usuário atual.
-Você pode passar um caminho customizado:
-
-Bash
-
-bash ts3/scripts/export_groups_block_1.sh /tmp/bloco-1.txt
+## Bloco 4
+- SGID 22
+- SGID 23
