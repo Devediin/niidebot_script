@@ -1,0 +1,34 @@
+Template base coletado a partir do grupo:
+
+[SGID 17] EK
+
+Permissões:
+sgid=17 permid=40 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=87 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=134 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=135 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=136 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=145 permvalue=834887711 permnegated=0 permskip=0
+sgid=17 permid=148 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=149 permvalue=15 permnegated=0 permskip=0
+sgid=17 permid=151 permvalue=110 permnegated=0 permskip=0
+sgid=17 permid=152 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=165 permvalue=75 permnegated=0 permskip=0
+sgid=17 permid=176 permvalue=0 permnegated=0 permskip=0
+sgid=17 permid=187 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=191 permvalue=1 permnegated=0 permskip=0
+sgid=17 permid=196 permvalue=75 permnegated=0 permskip=0
+sgid=17 permid=199 permvalue=25 permnegated=0 permskip=0
+sgid=17 permid=201 permvalue=25 permnegated=0 permskip=0
+sgid=17 permid=203 permvalue=25 permnegated=0 permskip=0
+sgid=17 permid=205 permvalue=25 permnegated=0 permskip=0
+
+Observação:
+Este conjunto será reutilizado como base para:
+- EK
+- ED
+- RP
+- MS
+- EM
+
+Também poderá servir como base inicial para grupos de level, salvo ajustes futuros.
