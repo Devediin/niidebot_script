@@ -35,6 +35,7 @@ run_if_exists "provision/06_systemd_services.sh"
 run_if_exists "provision/10_firewall.sh"
 run_if_exists "provision/07_validate_install.sh"
 run_if_exists "provision/08_show_next_steps.sh"
+run_if_exists "provision/14_ts3_template_notes.sh"
 
 echo "=================================================="
 echo " Provisionamento finalizado"
