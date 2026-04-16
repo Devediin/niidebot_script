@@ -9,6 +9,10 @@ print_header "Etapa 06 - Serviços systemd"
 require_root_or_sudo
 require_user_exists "$APP_USER"
 
+# ===========================
+# TS3 SERVICE
+# ===========================
+
 sudo tee /etc/systemd/system/ts3server.service >/dev/null <<EOF
 [Unit]
 Description=TeamSpeak 3 Server
@@ -29,6 +33,15 @@ RestartSec=5
 WantedBy=multi-user.target
 EOF
 
+# ===========================
+# BOT SERVICE
+# ===========================
+
+if [ ! -d "$BOT_DIR" ]; then
+  echo "BOT_DIR não encontrado: $BOT_DIR"
+  exit 1
+fi
+
 sudo tee /etc/systemd/system/tibia-ts3-bot.service >/dev/null <<EOF
 [Unit]
 Description=Tibia TS3 Bot
@@ -48,6 +61,10 @@ Environment=NODE_ENV=production
 [Install]
 WantedBy=multi-user.target
 EOF
+
+# ===========================
+# APPLY
+# ===========================
 
 sudo systemctl daemon-reload
 sudo systemctl enable ts3server.service
