@@ -13,7 +13,7 @@ APP_HOME=/home/ubuntu
 BOT_REPO=git@github.com:Devediin/tsbot.git
 
 # Diretório onde o bot ficará
-BOT_DIR=/home/ubuntu/tibia-ts3-teamspeakbot
+BOT_DIR=/home/ubuntu/tsbot
 
 # Diretório base do TS3
 TS3_BASE_DIR=/home/ubuntu/ts3
